@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora de cotizaciones</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
+
+
+	
+</head>
+<body>
+	<div class="cuerpo">
+	<H1>CALCULADORA DE PRECIOS</H1>
+	<h3>Si tu proveedor te cotiza en dolares, calculá el precio final en pesos según tus características empresariales.</h3>
+
+	
+	<div>
+		<form>
+		<label><input type="text" name="proveedor" id="Prov"> Dolar proveedor del producto</label><br><br>
+		<label><input type="text" name="IVA"  placeholder="%" id="IVA"> IVA del producto</label><br><br>
+		<label><input type="text" name="IByFlete" placeholder="%" id="IBF">  Ingresos brutos y flete</label><br><br>
+		<label><input type="text" name="ganancia" placeholder="%"  id="Gan"> Ganancia de venta</label><br><br>
+		<label><input type="text" name="DolarHoy" id="DolarHoy"> Dolar hoy</label><br><br>
+		<input class="botones" onclick="borrar()" type="reset" value="Borrar">
+		<input class="botones" type="button" name="Total" value="Calcular" onclick="total();"></input>
+		</form>
+		
+		<p id="totalfinal"> El precio final es = $0.00</p>
+	</div>
+	</div>
+	
+
+
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
+
