@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
 	
+	
 
 	
 </head>
@@ -17,14 +18,14 @@
 	<h3>Si tu proveedor te cotiza en dolares, calculá el precio final en pesos según tus características empresariales.</h3>
 	
 	
-		<form>
+		<form id="formulario">
 			
-		<label><legend> Dolar proveedor</legend> <input type="text" name="proveedor" id="Prov"></label><br><br>
-		<label><legend>IVA del producto</legend><input type="text" name="IVA"  placeholder="%" id="IVA"> </label><br><br>
+		<label><legend> Dolar proveedor</legend> <input type="text" name="proveedor" id="Prov" required></label><br><br>
+		<label><legend>IVA del producto</legend><input type="text" name="IVA"  placeholder="%" id="IVA" required> </label><br><br>
 		<label><legend>Ingresos brutos y flete</legend><input type="text" name="IByFlete" placeholder="%" id="IBF">  </label><br><br>
-		<label><legend>Ganancia de venta</legend><input type="text" name="ganancia" placeholder="%"  id="Gan"> </label><br><br>
-		<label><legend>Dolar hoy</legend><input type="text" name="DolarHoy" id="DolarHoy"> </label><br><br>
-		<input class="botones" type="button" name="Total" value="Calcular" onclick="total();">
+		<label><legend>Ganancia de venta</legend><input type="text" name="ganancia" placeholder="%"  id="Gan" required> </label><br><br>
+		<label><legend>Dolar hoy</legend><input type="text" name="DolarHoy" id="DolarHoy" required> </label><br><br>
+		<input class="botones" type="submit" name="Total" value="Calcular" onclick="total();">
 		<input class="botones" onclick="borrar()" type="reset" value="Borrar">
 
 		<p id="totalfinal"> El precio final es = $0.00</p>
@@ -35,7 +36,10 @@
 
 	
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/validar.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
 

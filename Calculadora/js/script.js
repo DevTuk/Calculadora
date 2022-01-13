@@ -33,3 +33,7 @@ function total() {
 
 		document.getElementById("totalfinal").innerHTML= "El precio final es = $0.00 ";
 	}
+
+//validaciones
+
+
